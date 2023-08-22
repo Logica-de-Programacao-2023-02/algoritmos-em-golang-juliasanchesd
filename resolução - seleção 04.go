@@ -12,7 +12,7 @@ func main() {
 	fmt.Scan(&peso)
 
 	IMC := peso / (altura * altura)
-	
+
 	var resultado string
 	if IMC < 18.5 {
 		resultado = ("abaixo do peso ideal")
