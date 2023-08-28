@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"sort"
-)
+import "fmt"
 
 func main() {
 	var num01 float64
@@ -18,18 +15,18 @@ func main() {
 	fmt.Print("Digite o terceiro número real: ")
 	fmt.Scan(&num03)
 
-
 	if num01 <= num02 && num02 <= num03 && num01 <= num03 {
-	        fmt.Printf("%d < %d < %d" , num01 , num02 , num03) 
-	} if num02 <= num01 && num02 <= num03 && num01 <= num03
-	        fmt.Printf("%d < %d < %d" , num02 , num01 , num03)
-        } if num01 <= num02 && num03 <= num02 && num01 <= num03 {
-	        fmt.Printf("%d < %d < %d" , num01 , num03 , num02 
-        } if num02 <= num01 && num03 <= num01 && num02 <= num03 {
-		fmt.Printf("%d < %d < %d" , num02 , num03 , num01
-	} if num03 <= num01 && num01 <= num02 && num03 <= num02 {
-		fmt.Printf("%d < %d < %d" , num03 , num01 , num02)
-	} if num03 <= num02 && num02 <= num01 && num03 <= num01 {
-		fmt.Printf("%d < %d < %d" , num03 , num02 , num01)
-		
+		fmt.Printf("%.1f < %.1f < %.1f", num01, num02, num03)
+	} else if num02 <= num01 && num02 <= num03 && num01 <= num03 {
+		fmt.Printf("%.1f < %.1f < %.1f", num02, num01, num03)
+	} else if num01 <= num02 && num03 <= num02 && num01 <= num03 {
+		fmt.Printf("%.1f < %.1f < %.1f", num01, num03, num02)
+	} else if num02 <= num01 && num03 <= num01 && num02 <= num03 {
+		fmt.Printf("%.1f < %.1f < %.1f", num02, num03, num01)
+	} else if num03 <= num01 && num01 <= num02 && num03 <= num02 {
+		fmt.Printf("%.1f < %.1f < %.1f", num03, num01, num02)
+	} else if num03 <= num02 && num02 <= num01 && num03 <= num01 {
+		fmt.Printf("%.1f < %.1f < %.1f", num03, num02, num01)
+	}
+
 }
